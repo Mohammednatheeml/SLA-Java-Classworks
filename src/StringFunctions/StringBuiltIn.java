@@ -14,7 +14,7 @@ public class StringBuiltIn {
 		System.out.println(str.isBlank()); // return true if the string is empty including whitespace also
 		System.out.println(str.toString()); //It gives string representation
 		System.out.println(str.charAt(1)); //returns character at the index
-		System.out.println(str.indexOf("J")); //Returns first index of the char
+		System.out.println(str.indexOf("z")); //Returns first index of the char
 		System.out.println(str.lastIndexOf("l")); //return last index
 		System.out.println(s1.concat(str1));
 		System.out.println(str.contains("Java"));
@@ -35,12 +35,11 @@ public class StringBuiltIn {
         System.out.println(str.replaceAll("l", "A")); //Replaces All match
         System.out.println(str.trim()); //trim spaces fro front and back
         String[] arr = str2.split(",");  //Split string into array  like if the split see the comma then it will split next words into array
-        
         for (String s : arr) {
             System.out.println(s);
         }
-        System.out.println(s1.repeat(3));
-        String result = String.join("-", "Java", "Python", "C++");
+        System.out.println(s1.repeat(3)); //repeate the  string 
+        String result = String.join("-", "Java", "Python", "C++"); //used to join
         System.out.println(result);
 
         
