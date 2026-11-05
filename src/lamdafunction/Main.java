@@ -8,10 +8,18 @@ public class Main {
 //		
 //		funtionalnterface.method();
 		
-		Funtionalnterface sum = (int a , int b) ->{
+		Funtionalnterface sum = (a, b) ->{
 			System.out.println("Addition:" +(a+b));
 		};
 		
 		sum.add(12, 12);
 	}
 }
+
+
+/* Syntax
+ * (parameters) -> {
+    // body
+	};
+ */
+ 
