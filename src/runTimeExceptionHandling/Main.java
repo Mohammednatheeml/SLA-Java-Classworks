@@ -24,16 +24,7 @@ public class Main {
 			System.out.println(e.getMessage());
 		}
 		
-		//3. Index out bound exception
-		
-		try {
-			String[] characters = {"a","b","c"};
-			System.out.println(characters[3]);
-		}
-		catch (IndexOutOfBoundsException e) {
-			System.out.println(e.getMessage());
-		}
-		
+				
 		
 		
 		
