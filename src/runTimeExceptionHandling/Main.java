@@ -35,6 +35,14 @@ public class Main {
 		}
 		
 		
+		try {
+			String a = "dfgh";
+			System.out.println(a.charAt(4));
+		}
+		catch (StringIndexOutOfBoundsException e) {
+			System.out.println(e.getMessage());
+		}
+		
 		
 		
 	}
