@@ -7,6 +7,13 @@ public class Main {
 		MultiThreading multiThreading = new MultiThreading();
 		multiThreading.start();
 		multiThreading.normal();
+		System.out.println("------------------------------------------------------");
+		
+		RunnableThreading runnableThreading = new RunnableThreading();
+		Thread thread = new Thread(runnableThreading);
+		thread.start();
+		runnableThreading.evenNo();
+		runnableThreading.loops();
 	}
 
 }
