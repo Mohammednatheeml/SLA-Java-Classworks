@@ -14,7 +14,7 @@ public class TwoDimentionalArrays {
 		sc.nextLine();
 		String[][] marks = new String[row][col];
 		
-		System.out.println(marks[0].length);
+//		System.out.println(marks[0].length);
 		
 		
 		
