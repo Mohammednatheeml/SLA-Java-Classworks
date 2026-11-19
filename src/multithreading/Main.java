@@ -2,7 +2,7 @@ package multithreading;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 //		MultiThreading multiThreading = new MultiThreading();
 //		multiThreading.start();
@@ -13,11 +13,7 @@ public class Main {
 		Thread thread = new Thread(runnableThreading);
 		thread.start();
 		runnableThreading.evenNo();
-		try {
-			thread.join();
-		} catch (InterruptedException e) {
-			System.out.println(e.getMessage());
-		}
+		thread.join();
 		runnableThreading.loops();
 	}
 
