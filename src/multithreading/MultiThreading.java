@@ -9,7 +9,7 @@ public class MultiThreading extends Thread {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				
-				e.printStackTrace();
+				System.out.println(e.getMessage());
 			}
 		}
 	}

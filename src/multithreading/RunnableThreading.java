@@ -13,6 +13,7 @@ public class RunnableThreading extends Parent implements Runnable {
 				e.printStackTrace();
 			}
 		}
+		System.out.println("Thread Completed");
 		
 	}
 	
