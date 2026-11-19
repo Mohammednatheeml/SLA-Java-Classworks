@@ -15,7 +15,7 @@ public class MultiThreading extends Thread {
 	}
 	
 	public void run() {
-		for(int i = 1;i<=50;i++) {
+		for(int i = 1;i<=30;i++) {
 			
 			try {
 				if(i % 5 == 0) {
