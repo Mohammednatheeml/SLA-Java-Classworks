@@ -3,7 +3,8 @@ package synchronizeThreading;
 public class Main {
 
 	public static void main(String[] args) {
-		SyncThread syncThread  = new SyncThread();
+		SyncThread1 syncThread  = new SyncThread1();
+		
 		
 		Thread t1 = new Thread(()->{
 			syncThread.food();
@@ -16,9 +17,14 @@ public class Main {
 			syncThread.Making();
 		});
 		
+		Thread t4 = new Thread(()->{
+			syncThread.example();
+		});
+		
 		t1.start();
 		t2.start();
 		t3.start();
+		
 		syncThread.delivery();
 
 

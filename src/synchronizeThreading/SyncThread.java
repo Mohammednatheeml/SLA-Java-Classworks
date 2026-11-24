@@ -40,7 +40,7 @@ public class SyncThread {
 
 	public void delivery() {
 	
-	for(int i=1;i<=25;i++) {
+	for(int i=1;i<=30;i++) {
 		try {
 			System.out.println("Successfully Delivered Food Number:"+i);
 			Thread.sleep(1000);
@@ -50,10 +50,5 @@ public class SyncThread {
 		}
 	}
 	
-	
 }
-	
-	
-
-
 }
