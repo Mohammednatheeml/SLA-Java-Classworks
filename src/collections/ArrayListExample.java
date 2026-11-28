@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class ArrayListExample {
 	
 	public static void main(String[] args) {
+		
+		//POINTS => Allow duplicate elements , Follow iinsertion order, Index baseis
 		ArrayList<String> array = new ArrayList<String>();
 		array.add("Natheem");
 		array.add("Ashik");
