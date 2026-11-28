@@ -37,7 +37,7 @@ public class Main {
 		String filename = sc.nextLine();
 		FileReader fileReader = new FileReader(filename);
 		System.out.println(fileReader.readAllAsString());
-		fileReader.close();
+		fileReader.close(); //close edhuku use panrom na .....adhu use pannalana andha function innom running la irukum adhu use panna dhan andha function end aahum....use pannama next function call pannaila output thappa varum
 	}
 	
 	public void DeleteFile() {
@@ -57,11 +57,42 @@ public class Main {
 		
 		
 		Main main = new Main();
-//		main.CreateFile();
-//		main.WriteFile();
-		main.ReadFile();
-		main.DeleteFile();
 		
+		int choice = 0;
+		
+		do {
+			System.out.println("---File Handling---");
+			System.out.println("1.create");
+			System.out.println("2.Write");
+			System.out.println("3.Read");
+			System.out.println("4.delete");
+			System.out.println("0.Exit");
+			System.out.println("Enter your choice");
+			Scanner sc = new Scanner(System.in);
+			choice = sc.nextInt();
+			
+			
+			switch(choice) {
+			case 1:
+				main.CreateFile();
+				break;
+			case 2:
+				main.WriteFile();
+				break;
+			case 3:
+				main.ReadFile();
+				break;
+			case 4:
+				main.DeleteFile();
+				break;
+			case 0:
+				System.out.println("Loop Started");
+				break;
+			default:
+				System.out.println("Incorrect option");
+			}
+			
+		}while(choice != 0);
 	}
 
 }
