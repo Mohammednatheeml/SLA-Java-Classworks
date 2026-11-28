@@ -1,6 +1,7 @@
 package filehandling;
 
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -27,16 +28,39 @@ public class Main {
 		System.out.println("Entger your data");
 		String data = sc.nextLine();
 		fileWriter.write(data);
+		System.out.println("successfully loaded");
 		fileWriter.close(); // file writer will write the data into that file if exist ...otherwise it will automaticatty create that file and load the data
 	}
-
+	
+	public void ReadFile() throws IOException {
+		System.out.println("Enter Your file");
+		String filename = sc.nextLine();
+		FileReader fileReader = new FileReader(filename);
+		System.out.println(fileReader.readAllAsString());
+		fileReader.close();
+	}
+	
+	public void DeleteFile() {
+		System.out.println("Enter Your file");
+		String filename = sc.nextLine();
+		File file = new File(filename);
+		if(file.delete()) {
+			System.out.println("file deleted");	
+		}
+		else {
+			System.out.println("File not exist");
+		}
+		
+	}
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
 		
 		Main main = new Main();
-		main.CreateFile();
-		main.WriteFile();
+//		main.CreateFile();
+//		main.WriteFile();
+		main.ReadFile();
+		main.DeleteFile();
 		
 	}
 
