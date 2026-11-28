@@ -15,13 +15,26 @@ public class ArrayListExample {
 		array.add(1,"Natheem");
 		array.remove(5);
 		
+		ArrayList<String> array1 = new ArrayList<String>();
+		
+		array1.add("kamal");
+		array1.add("rosan");
+		array.addAll(array1);
+		
 		System.out.println(array);
 		System.out.println(array.get(0));
 		System.out.println(array.size());
 		System.out.println(array.isEmpty());
-		array.clear();
+//		array.clear();
 		System.out.println(array.isEmpty());
 		System.out.println(array);
+		
+		System.out.println(array1);
+		System.out.println(array.subList(1, 4));
+		
+		for(String name : array) {
+		    System.out.println(name);
+		}
 	}
 
 }
