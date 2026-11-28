@@ -52,6 +52,24 @@ public class Main {
 		}
 		
 	}
+	
+	
+	public void EndAndPrevious() throws IOException {
+		System.out.println("Enter Your file");
+		String filename = sc.nextLine();
+		FileReader fileReader = new FileReader(filename);
+		String Previous = fileReader.readAllAsString();
+		
+		
+		FileWriter fileWriter = new FileWriter(filename);
+		System.out.println("Enter your data");
+		String data = sc.nextLine();
+		fileWriter.write(Previous + " " + data);
+		System.out.println(fileReader.readAllAsString());
+		
+		
+	}
+	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
@@ -66,6 +84,7 @@ public class Main {
 			System.out.println("2.Write");
 			System.out.println("3.Read");
 			System.out.println("4.delete");
+			System.out.println("5.continue write");
 			System.out.println("0.Exit");
 			System.out.println("Enter your choice");
 			Scanner sc = new Scanner(System.in);
@@ -84,6 +103,9 @@ public class Main {
 				break;
 			case 4:
 				main.DeleteFile();
+				break;
+			case 5:
+				main.EndAndPrevious();
 				break;
 			case 0:
 				System.out.println("Loop Started");
